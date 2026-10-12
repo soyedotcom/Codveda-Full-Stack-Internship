@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 30px;
+
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 30px 0px 30px 0;
+}
+
+#add_car {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 30px 0px 30px 0;
+  padding: 20px;
+
+  border: 1px solid black;
+}
+
+input {
+  margin: 10px 0px 10px 0;
+  padding: 10px;
+}
+
+button {
+  margin: 10px 0px 10px 0;
+  padding: 10px;
+  height: 40px;
+}

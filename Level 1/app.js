@@ -2,6 +2,9 @@ import express from "express";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+app.use(express.static("public"));
+
 let cars = [
   { plate: "ABC123", brand: "Toyota", model: "Camry", year: 2018 },
   { plate: "DEF456", brand: "Honda", model: "Civic", year: 2019 },
@@ -10,10 +13,7 @@ let cars = [
   { plate: "MNO345", brand: "Porsche", model: "911", year: 2022 },
 ];
 
-app.use(express.json());
-
 //CRUD OPERATIONS
-
 //create
 app.post("/cars", (req, res) => {
   try {
